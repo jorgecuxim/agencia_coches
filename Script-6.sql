@@ -149,8 +149,7 @@ JOIN PERSONAS AS P ON C.Propietario = P.ID;
 SELECT P.Nombre, P.Apellidos
 FROM PERSONAS AS P
 JOIN COCHES AS C ON P.ID = C.Propietario
-WHERE Matricula = '1234ABC'; -- Reemplaza con la matrícula del coche que deseas consultar
-
+WHERE Matricula = '1234ABC'; 
 -- 3. Listar todos los coches junto con la última fecha de servicio registrado para cada uno
 
 SELECT C.Modelo, C.Matricula, MAX(S.Fecha_servicio) AS Ultima_fecha_servicio
